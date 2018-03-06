@@ -2,14 +2,14 @@ DOCS: http://facebook.github.io/react-native/docs/getting-started.html
 1. Install node, react, react native, xcode/android toolkits
 2. Use this repo as base repo, clone, code and push here
 3. Create an application with 4 screens:
-    a. Login screen/Register screen (email, password, repassword)
-    b. User profile screen with update view
+    - Login screen/Register screen (email, password, repassword)
+    - User profile screen with update view
         - Show user information
         - Update button => update view OR inline editable field (better!)
-    b. All messages thread view (with search bar)
+    - All messages thread view (with search bar)
         - List of threads (title and some description text)
         - On click go to (c)
-    c. Single thread view
+    - Single thread view
         - Messages list
         - Text/Input box
         - Send button
