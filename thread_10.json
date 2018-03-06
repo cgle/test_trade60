@@ -1,0 +1,78 @@
+{
+    "code": 200, 
+    "result": [
+      {
+        "content": "hello now", 
+        "create_time": "Tue, 06 Mar 2018 01:15:10 GMT", 
+        "id": 32, 
+        "is_html": false, 
+        "is_pinned": false, 
+        "message_type": "message", 
+        "other_details": null, 
+        "pinned_by": null, 
+        "saved_by": [], 
+        "subject": null, 
+        "thread_id": 10, 
+        "user": {
+          "company_id": 1125, 
+          "company_name": "First Company", 
+          "email": "user1@b2b.com", 
+          "first_name": "John", 
+          "id": 5, 
+          "last_name": "Smith", 
+          "name": "John Smith", 
+          "profile_pic": "/static/media/user/5/aE.jpg_1519877531_thumbnailw360.JPEG"
+        }, 
+        "user_id": 5
+      }, 
+      {
+        "content": "trying", 
+        "create_time": "Tue, 06 Mar 2018 01:15:34 GMT", 
+        "id": 33, 
+        "is_html": false, 
+        "is_pinned": false, 
+        "message_type": "message", 
+        "other_details": null, 
+        "pinned_by": null, 
+        "saved_by": [], 
+        "subject": null, 
+        "thread_id": 10, 
+        "user": {
+          "company_id": 1125, 
+          "company_name": "First Company", 
+          "email": "user1@b2b.com", 
+          "first_name": "John", 
+          "id": 5, 
+          "last_name": "Smith", 
+          "name": "John Smith", 
+          "profile_pic": "/static/media/user/5/aE.jpg_1519877531_thumbnailw360.JPEG"
+        }, 
+        "user_id": 5
+      }, 
+      {
+        "content": "tying message", 
+        "create_time": "Tue, 06 Mar 2018 01:27:29 GMT", 
+        "id": 45, 
+        "is_html": false, 
+        "is_pinned": false, 
+        "message_type": "message", 
+        "other_details": null, 
+        "pinned_by": null, 
+        "saved_by": [], 
+        "subject": null, 
+        "thread_id": 10, 
+        "user": {
+          "company_id": 1125, 
+          "company_name": "First Company", 
+          "email": "user1@b2b.com", 
+          "first_name": "John", 
+          "id": 5, 
+          "last_name": "Smith", 
+          "name": "John Smith", 
+          "profile_pic": "/static/media/user/5/aE.jpg_1519877531_thumbnailw360.JPEG"
+        }, 
+        "user_id": 5
+      }
+    ], 
+    "text": "Returning messages"
+  }

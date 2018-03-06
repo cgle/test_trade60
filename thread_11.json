@@ -1,0 +1,126 @@
+{
+    "code": 200, 
+    "result": [
+      {
+        "content": "hello 2 mates", 
+        "create_time": "Mon, 05 Mar 2018 23:39:24 GMT", 
+        "id": 20, 
+        "is_html": false, 
+        "is_pinned": false, 
+        "message_type": "message", 
+        "other_details": null, 
+        "pinned_by": null, 
+        "saved_by": [], 
+        "subject": null, 
+        "thread_id": 11, 
+        "user": {
+          "company_id": 1125, 
+          "company_name": "First Company", 
+          "email": "user2@b2b.com", 
+          "first_name": "John", 
+          "id": 6, 
+          "last_name": "Krammer", 
+          "name": "John Krammer", 
+          "profile_pic": null
+        }, 
+        "user_id": 6
+      }, 
+      {
+        "content": "hello my man", 
+        "create_time": "Mon, 05 Mar 2018 23:39:39 GMT", 
+        "id": 21, 
+        "is_html": false, 
+        "is_pinned": false, 
+        "message_type": "message", 
+        "other_details": null, 
+        "pinned_by": null, 
+        "saved_by": [], 
+        "subject": null, 
+        "thread_id": 11, 
+        "user": {
+          "company_id": 1125, 
+          "company_name": "First Company", 
+          "email": "user2@b2b.com", 
+          "first_name": "John", 
+          "id": 6, 
+          "last_name": "Krammer", 
+          "name": "John Krammer", 
+          "profile_pic": null
+        }, 
+        "user_id": 6
+      }, 
+      {
+        "content": "olalalala?", 
+        "create_time": "Mon, 05 Mar 2018 23:40:14 GMT", 
+        "id": 24, 
+        "is_html": false, 
+        "is_pinned": false, 
+        "message_type": "message", 
+        "other_details": null, 
+        "pinned_by": null, 
+        "saved_by": [], 
+        "subject": null, 
+        "thread_id": 11, 
+        "user": {
+          "company_id": 1125, 
+          "company_name": "First Company", 
+          "email": "user2@b2b.com", 
+          "first_name": "John", 
+          "id": 6, 
+          "last_name": "Krammer", 
+          "name": "John Krammer", 
+          "profile_pic": null
+        }, 
+        "user_id": 6
+      }, 
+      {
+        "content": "trying again", 
+        "create_time": "Mon, 05 Mar 2018 23:40:25 GMT", 
+        "id": 25, 
+        "is_html": false, 
+        "is_pinned": false, 
+        "message_type": "message", 
+        "other_details": null, 
+        "pinned_by": null, 
+        "saved_by": [], 
+        "subject": null, 
+        "thread_id": 11, 
+        "user": {
+          "company_id": 1125, 
+          "company_name": "First Company", 
+          "email": "user2@b2b.com", 
+          "first_name": "John", 
+          "id": 6, 
+          "last_name": "Krammer", 
+          "name": "John Krammer", 
+          "profile_pic": null
+        }, 
+        "user_id": 6
+      }, 
+      {
+        "content": "new message", 
+        "create_time": "Tue, 06 Mar 2018 01:27:34 GMT", 
+        "id": 46, 
+        "is_html": false, 
+        "is_pinned": false, 
+        "message_type": "message", 
+        "other_details": null, 
+        "pinned_by": null, 
+        "saved_by": [], 
+        "subject": null, 
+        "thread_id": 11, 
+        "user": {
+          "company_id": 1125, 
+          "company_name": "First Company", 
+          "email": "user1@b2b.com", 
+          "first_name": "John", 
+          "id": 5, 
+          "last_name": "Smith", 
+          "name": "John Smith", 
+          "profile_pic": "/static/media/user/5/aE.jpg_1519877531_thumbnailw360.JPEG"
+        }, 
+        "user_id": 5
+      }
+    ], 
+    "text": "Returning messages"
+  }

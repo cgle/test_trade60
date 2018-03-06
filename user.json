@@ -1,0 +1,43 @@
+{
+    "code": 200, 
+    "result": {
+      "company": {
+        "capacity": null, 
+        "company_info": null, 
+        "company_size": null, 
+        "company_types": null, 
+        "country": null, 
+        "description": null, 
+        "email": null, 
+        "fax": null, 
+        "id": 1125, 
+        "is_claimed": false, 
+        "is_public": false, 
+        "keywords": [], 
+        "location": "India", 
+        "main_markets": null, 
+        "membership_type": null, 
+        "name": "First Company", 
+        "other_details": {}, 
+        "payment": null, 
+        "phone": null, 
+        "port": null, 
+        "shipping_handling": null, 
+        "total_annual_sales": null, 
+        "total_purchase_volume": null, 
+        "total_revenue": null, 
+        "website": null, 
+        "year_founded": null
+      }, 
+      "company_id": 1125, 
+      "company_name": null, 
+      "description": null, 
+      "email": "user2@b2b.com", 
+      "id": 6, 
+      "interest": null, 
+      "location": "Japan", 
+      "name": "John Krammer", 
+      "profile_pic": null, 
+      "website": null
+    }
+  }

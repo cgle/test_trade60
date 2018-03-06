@@ -1,0 +1,54 @@
+{
+    "code": 200, 
+    "result": [
+      {
+        "content": "a private message between me and you", 
+        "create_time": "Mon, 05 Mar 2018 23:41:45 GMT", 
+        "id": 28, 
+        "is_html": false, 
+        "is_pinned": false, 
+        "message_type": "message", 
+        "other_details": null, 
+        "pinned_by": null, 
+        "saved_by": [], 
+        "subject": null, 
+        "thread_id": 8, 
+        "user": {
+          "company_id": 1125, 
+          "company_name": "First Company", 
+          "email": "user2@b2b.com", 
+          "first_name": "John", 
+          "id": 6, 
+          "last_name": "Krammer", 
+          "name": "John Krammer", 
+          "profile_pic": null
+        }, 
+        "user_id": 6
+      }, 
+      {
+        "content": "new message", 
+        "create_time": "Tue, 06 Mar 2018 01:24:27 GMT", 
+        "id": 39, 
+        "is_html": false, 
+        "is_pinned": false, 
+        "message_type": "message", 
+        "other_details": null, 
+        "pinned_by": null, 
+        "saved_by": [], 
+        "subject": null, 
+        "thread_id": 8, 
+        "user": {
+          "company_id": 1125, 
+          "company_name": "First Company", 
+          "email": "user2@b2b.com", 
+          "first_name": "John", 
+          "id": 6, 
+          "last_name": "Krammer", 
+          "name": "John Krammer", 
+          "profile_pic": null
+        }, 
+        "user_id": 6
+      }
+    ], 
+    "text": "Returning messages"
+  }

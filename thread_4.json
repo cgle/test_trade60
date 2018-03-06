@@ -1,0 +1,54 @@
+{
+    "code": 200, 
+    "result": [
+      {
+        "content": "\n    <div class=\"product-inquiry-msg\">\n        <label><b>Product</b></label>\n        <div class='products-list'>\n            <div class='card product-item'>\n                <img class='card-img-top' \n                    src=\"/static/media/company/396/product/5595/ry-set-for-kids.jpg_1519777542\" />\n                <div class='card-body'>\n                    <div class='card-text'>\n                        <a href='/product/5595'>(9 in 1) Fashion Stationery Set for Kids</a>\n                    </div>\n                </div>\n            </div>        \n        </div>\n        <p>Please provide more information regarding <b>(9 in 1) Fashion Stationery Set for Kids</b></p>\n    </div>\n    ", 
+        "create_time": "Sun, 04 Mar 2018 18:23:03 GMT", 
+        "id": 13, 
+        "is_html": false, 
+        "is_pinned": true, 
+        "message_type": "message", 
+        "other_details": null, 
+        "pinned_by": 5, 
+        "saved_by": [], 
+        "subject": "Product inquiry: (9 in 1) Fashion Stationery Set for Kids", 
+        "thread_id": 4, 
+        "user": {
+          "company_id": 1125, 
+          "company_name": "First Company", 
+          "email": "user1@b2b.com", 
+          "first_name": "John", 
+          "id": 5, 
+          "last_name": "Smith", 
+          "name": "John Smith", 
+          "profile_pic": "/static/media/user/5/aE.jpg_1519877531_thumbnailw360.JPEG"
+        }, 
+        "user_id": 5
+      }, 
+      {
+        "content": "\n    <div class='auto-reply-msg' data-reply_type='product_inquiry'>\n        <p>Hey, John Smith!</p>\n        <p>\n            Thank you for your interest in All View Business Co., Ltd.. Currently, all representatives from All View Business Co., Ltd. are not available. We will contact them on your behalf and update you ASAP. You can manage notification settings <a href=\"/my-account/notifications\">here</a>.\n        </p>\n        <p>Have a great day :D!</p>\n        <p><b>Trade60 Support Team</b></p>\n    </div>\n    ", 
+        "create_time": "Sun, 04 Mar 2018 18:23:03 GMT", 
+        "id": 14, 
+        "is_html": false, 
+        "is_pinned": false, 
+        "message_type": "message", 
+        "other_details": null, 
+        "pinned_by": null, 
+        "saved_by": [], 
+        "subject": null, 
+        "thread_id": 4, 
+        "user": {
+          "company_id": null, 
+          "company_name": "Trade60", 
+          "email": "msg_support@trade60.com", 
+          "first_name": "Trade60", 
+          "id": 3, 
+          "last_name": "Support", 
+          "name": "Trade60 Support", 
+          "profile_pic": null
+        }, 
+        "user_id": 3
+      }
+    ], 
+    "text": "Returning messages"
+  }

@@ -1,0 +1,54 @@
+{
+    "code": 200, 
+    "result": [
+      {
+        "description": "Message thread for questions regarding products of Suzhou Howsine Biological Technology Co., Ltd", 
+        "id": 3, 
+        "is_active": true, 
+        "name": "Product inquiry: Suzhou Howsine Biological Technology Co., Ltd", 
+        "num_unread_msgs": 0, 
+        "thread_type": "product_inquiry"
+      }, 
+      {
+        "description": "Message thread for questions regarding products of All View Business Co., Ltd.", 
+        "id": 4, 
+        "is_active": true, 
+        "name": "Product inquiry: All View Business Co., Ltd.", 
+        "num_unread_msgs": 0, 
+        "thread_type": "product_inquiry"
+      }, 
+      {
+        "description": "Private message thread between user2@b2b.com and user1@b2b.com", 
+        "id": 8, 
+        "is_active": true, 
+        "name": "Private message thread", 
+        "num_unread_msgs": 0, 
+        "thread_type": "private_thread"
+      }, 
+      {
+        "description": "Hello John", 
+        "id": 9, 
+        "is_active": true, 
+        "name": "Hello John Doe", 
+        "num_unread_msgs": 0, 
+        "thread_type": "message_thread"
+      }, 
+      {
+        "description": "Hello two Johns :D", 
+        "id": 10, 
+        "is_active": true, 
+        "name": "Hello 2 johns", 
+        "num_unread_msgs": 0, 
+        "thread_type": "message_thread"
+      }, 
+      {
+        "description": "Hello my mates!", 
+        "id": 11, 
+        "is_active": true, 
+        "name": "Hi all three Johns", 
+        "num_unread_msgs": 0, 
+        "thread_type": "message_thread"
+      }
+    ], 
+    "text": "List threads"
+  }

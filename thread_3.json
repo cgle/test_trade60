@@ -1,0 +1,126 @@
+{
+    "code": 200, 
+    "result": [
+      {
+        "content": "\n    <div class=\"product-inquiry-msg\">\n        <label><b>Product</b></label>\n        <div class='products-list'>\n            <div class='card product-item'>\n                <img class='card-img-top' \n                    src=\"/static/media/company/108/product/1480/e-intermediates.jpg_1519777216\" />\n                <div class='card-body'>\n                    <div class='card-text'>\n                        <a href='/product/1480'>(2R, 3R)-2-(2, 4-Difluorophenyl)-1-(1H-1, 2, 4-triazol-1-yl)-2, 3-butanediol , 133775-25-4, Efinaconazole Intermediates</a>\n                    </div>\n                </div>\n            </div>        \n        </div>\n        <p>Please provide more information regarding <b>(2R, 3R)-2-(2, 4-Difluorophenyl)-1-(1H-1, 2, 4-triazol-1-yl)-2, 3-butanediol , 133775-25-4, Efinaconazole Intermediates</b></p>\n    </div>\n    ", 
+        "create_time": "Fri, 02 Mar 2018 17:41:59 GMT", 
+        "id": 11, 
+        "is_html": false, 
+        "is_pinned": true, 
+        "message_type": "message", 
+        "other_details": null, 
+        "pinned_by": 5, 
+        "saved_by": [], 
+        "subject": "Product inquiry: (2R, 3R)-2-(2, 4-Difluorophenyl)-1-(1H-1, 2, 4-triazol-1-yl)-2, 3-butanediol , 133775-25-4, Efinaconazole Intermediates", 
+        "thread_id": 3, 
+        "user": {
+          "company_id": 1125, 
+          "company_name": "First Company", 
+          "email": "user1@b2b.com", 
+          "first_name": "John", 
+          "id": 5, 
+          "last_name": "Smith", 
+          "name": "John Smith", 
+          "profile_pic": "/static/media/user/5/aE.jpg_1519877531_thumbnailw360.JPEG"
+        }, 
+        "user_id": 5
+      }, 
+      {
+        "content": "\n    <div class='auto-reply-msg' data-reply_type='product_inquiry'>\n        <p>Hey, John Smith!</p>\n        <p>\n            Thank you for your interest in Suzhou Howsine Biological Technology Co., Ltd. Currently, all representatives from Suzhou Howsine Biological Technology Co., Ltd are not available. We will contact them on your behalf and update you ASAP. You can manage notification settings <a href=\"/my-account/notifications\">here</a>.\n        </p>\n        <p>Have a great day :D!</p>\n        <p><b>Trade60 Support Team</b></p>\n    </div>\n    ", 
+        "create_time": "Fri, 02 Mar 2018 17:41:59 GMT", 
+        "id": 12, 
+        "is_html": false, 
+        "is_pinned": false, 
+        "message_type": "message", 
+        "other_details": null, 
+        "pinned_by": null, 
+        "saved_by": [], 
+        "subject": null, 
+        "thread_id": 3, 
+        "user": {
+          "company_id": null, 
+          "company_name": "Trade60", 
+          "email": "msg_support@trade60.com", 
+          "first_name": "Trade60", 
+          "id": 3, 
+          "last_name": "Support", 
+          "name": "Trade60 Support", 
+          "profile_pic": null
+        }, 
+        "user_id": 3
+      }, 
+      {
+        "content": "ok", 
+        "create_time": "Tue, 06 Mar 2018 01:14:40 GMT", 
+        "id": 30, 
+        "is_html": false, 
+        "is_pinned": false, 
+        "message_type": "message", 
+        "other_details": null, 
+        "pinned_by": null, 
+        "saved_by": [], 
+        "subject": null, 
+        "thread_id": 3, 
+        "user": {
+          "company_id": 1125, 
+          "company_name": "First Company", 
+          "email": "user1@b2b.com", 
+          "first_name": "John", 
+          "id": 5, 
+          "last_name": "Smith", 
+          "name": "John Smith", 
+          "profile_pic": "/static/media/user/5/aE.jpg_1519877531_thumbnailw360.JPEG"
+        }, 
+        "user_id": 5
+      }, 
+      {
+        "content": "another message", 
+        "create_time": "Tue, 06 Mar 2018 01:21:24 GMT", 
+        "id": 34, 
+        "is_html": false, 
+        "is_pinned": false, 
+        "message_type": "message", 
+        "other_details": null, 
+        "pinned_by": null, 
+        "saved_by": [], 
+        "subject": null, 
+        "thread_id": 3, 
+        "user": {
+          "company_id": 1125, 
+          "company_name": "First Company", 
+          "email": "user1@b2b.com", 
+          "first_name": "John", 
+          "id": 5, 
+          "last_name": "Smith", 
+          "name": "John Smith", 
+          "profile_pic": "/static/media/user/5/aE.jpg_1519877531_thumbnailw360.JPEG"
+        }, 
+        "user_id": 5
+      }, 
+      {
+        "content": "is it too good to be true bro????", 
+        "create_time": "Tue, 06 Mar 2018 01:21:36 GMT", 
+        "id": 35, 
+        "is_html": false, 
+        "is_pinned": false, 
+        "message_type": "message", 
+        "other_details": null, 
+        "pinned_by": null, 
+        "saved_by": [], 
+        "subject": null, 
+        "thread_id": 3, 
+        "user": {
+          "company_id": 1125, 
+          "company_name": "First Company", 
+          "email": "user1@b2b.com", 
+          "first_name": "John", 
+          "id": 5, 
+          "last_name": "Smith", 
+          "name": "John Smith", 
+          "profile_pic": "/static/media/user/5/aE.jpg_1519877531_thumbnailw360.JPEG"
+        }, 
+        "user_id": 5
+      }
+    ], 
+    "text": "Returning messages"
+  }
