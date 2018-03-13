@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { TextInput, View, Text, Button, Image } from 'react-native';
 
 export default class LogIn extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             email: '',
@@ -13,7 +13,7 @@ export default class LogIn extends Component {
         alert('Log in successfully')
     }
     render() {
-        const {emailError, passwordError} = this.state;
+        const { emailError, passwordError } = this.state;
         return (
             <View>
                 <View>
@@ -28,11 +28,11 @@ export default class LogIn extends Component {
                 <View>
                     <View>
                         <TextInput
-                            placeholder = "email"
-                            keyboardType= "email-address"
-                            onChangeText = {(email) => this.setState({email})}
+                            placeholder="email"
+                            keyboardType="email-address"
+                            onChangeText={(email) => this.setState({ email })}
                         />
-                        {emailError && 
+                        {emailError &&
                             <Text>{emailError}</Text>
                         }
                     </View>
@@ -40,7 +40,7 @@ export default class LogIn extends Component {
                         <TextInput
                             placeholder="password"
                             secureTextEntry={true}
-                            onChangeText={(password) => this.setState({password})}
+                            onChangeText={(password) => this.setState({ password })}
                         />
                         {passwordError &&
                             <Text>{passwordError}</Text>
@@ -49,8 +49,8 @@ export default class LogIn extends Component {
                 </View>
                 <View>
                     <Button
-                        title = "Log in"
-                        onPress = {() => {this.login()}}
+                        title="Log in"
+                        onPress={() => { this.login() }}
                     />
                     <Text>
                         Create an account

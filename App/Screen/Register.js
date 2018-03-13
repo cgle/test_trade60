@@ -66,23 +66,23 @@ export default class Register extends Component {
     return (
       <View>
         <View>
-          <Image 
-            source={require('../images/logo.jpg')}
-            style ={styles.image}
+          <Image
+            source={require('../../images/logo.jpg')}
+            style={styles.image}
           />
           <Text style={styles.titleText}>Register</Text>
         </View>
         <View>
           <Text>Email</Text>
           <TextInput
-          onChangeText={(email) => this.setState({email})}
+            onChangeText={(email) => this.setState({ email })}
           />
         </View>
         <View>
           <Text>Password</Text>
           <TextInput
             secureTextEntry={true}
-            onChangeText={(password) => this.setState({password})}
+            onChangeText={(password) => this.setState({ password })}
           />
           <Text>{passwordErrorMessage}</Text>
         </View>
@@ -90,12 +90,12 @@ export default class Register extends Component {
           <Text>Confirm Password</Text>
           <TextInput
             secureTextEntry={true}
-            onChangeText={(confirmPassword) => this.setState({confirmPassword})}
+            onChangeText={(confirmPassword) => this.setState({ confirmPassword })}
           />
           <Text>{confirmPasswordErrorMessage}</Text>
-        </View> 
+        </View>
         <View>
-          <Button title="SignUp" onPress={this.checkValidate}/>
+          <Button title="SignUp" onPress={this.checkValidate} />
         </View>
       </View>
     );

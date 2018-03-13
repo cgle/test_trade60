@@ -14,6 +14,7 @@ import {
 import { StackNavigator } from 'react-navigation';
 import HomeScreen from './App/Screen/HomeScreen'
 import LogIn from './App/Screen/LogIn';
+import Register from './App/Screen/Register'
 
 const RootStack = StackNavigator(
   {
@@ -23,9 +24,9 @@ const RootStack = StackNavigator(
     LogIn: {
       screen: LogIn
     },
-    // Register: {
-    //   screen: Register
-    // }
+    Register: {
+      screen: Register
+    },
   },
   {
     initialRouteName: 'Home',
