@@ -14,6 +14,7 @@ export default class LogIn extends Component {
     }
     render() {
         const { emailError, passwordError } = this.state;
+        const { navigate } = this.props.navigation;
         return (
             <View>
                 <View>
@@ -52,7 +53,9 @@ export default class LogIn extends Component {
                         title="Log in"
                         onPress={() => { this.login() }}
                     />
-                    <Text>
+                    <Text
+                        onPress = {() => navigate('Register')}
+                    >
                         Create an account
                     </Text>
                 </View>
