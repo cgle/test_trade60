@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TextInput, View, Text, Button, Image } from 'react-native';
+import { TextInput, View, Text, Button, Image, StyleSheet } from 'react-native';
 
 export default class LogIn extends Component {
     constructor(props) {
@@ -19,16 +19,19 @@ export default class LogIn extends Component {
             <View>
                 <View>
                     <Image
-                        style={{ width: 200, height: 50 }}
+                        style={styles.logo}
                         source={require('../../images/logo.jpg')}
                     />
-                    <Text>
+                    <Text
+                        style={styles.title}
+                    >
                         LOG IN
                     </Text>
                 </View>
                 <View>
                     <View>
                         <TextInput
+                            style={styles.textInput}
                             placeholder="email"
                             keyboardType="email-address"
                             onChangeText={(email) => this.setState({ email })}
@@ -39,6 +42,7 @@ export default class LogIn extends Component {
                     </View>
                     <View>
                         <TextInput
+                            style={styles.textInput}
                             placeholder="password"
                             secureTextEntry={true}
                             onChangeText={(password) => this.setState({ password })}
@@ -54,6 +58,7 @@ export default class LogIn extends Component {
                         onPress={() => { this.login() }}
                     />
                     <Text
+                        style={styles.link}
                         onPress = {() => navigate('Register')}
                     >
                         Create an account
@@ -63,3 +68,24 @@ export default class LogIn extends Component {
         );
     }
 }
+
+const styles = StyleSheet.create({
+    logo: {
+        width: 200,
+        height: 50
+    },
+    title: {
+        textAlign: 'center',
+        fontWeight: 'bold',
+        fontSize: 30
+    },
+    textInput: {
+        fontSize: 20
+    },
+    link: {
+        textAlign: 'center',
+        textDecorationLine: 'underline',
+        color: 'rgb(33,150,243)',
+        fontSize: 20
+    }
+})
