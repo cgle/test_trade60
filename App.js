@@ -11,6 +11,26 @@ import {
   Text,
   View
 } from 'react-native';
+import { StackNavigator } from 'react-navigation';
+import HomeScreen from './App/Screen/HomeScreen'
+import LogIn from './App/Screen/LogIn';
+
+const RootStack = StackNavigator(
+  {
+    Home: {
+      screen: HomeScreen,
+    },
+    LogIn: {
+      screen: LogIn
+    },
+    // Register: {
+    //   screen: Register
+    // }
+  },
+  {
+    initialRouteName: 'Home',
+  }
+);
 
 const instructions = Platform.select({
   ios: 'HALLO!!!!',
@@ -20,33 +40,7 @@ const instructions = Platform.select({
 export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to Trade60.com
-        </Text>        
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-      </View>
+      <RootStack />
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
