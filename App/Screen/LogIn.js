@@ -53,9 +53,6 @@ export default class LogIn extends Component {
                         onPress = {() => {this.login()}}
                     />
                     <Text>
-                        Forgot password?
-                    </Text>
-                    <Text>
                         Create an account
                     </Text>
                 </View>
