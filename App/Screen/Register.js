@@ -6,7 +6,10 @@ import {
   Button,
   StyleSheet,
   Image,
+  YellowBox,
 } from 'react-native';
+
+import { emailRegEx } from '../constant'
 
 const styles = StyleSheet.create({
   titleText: {
@@ -27,9 +30,14 @@ export default class Register extends Component {
       email: '',
       password: '',
       confirmPassword: '',
+      emailErrorMessage: '',
       passwordErrorMessage: '',
       confirmPasswordErrorMessage: '',
     };
+    YellowBox.ignoreWarnings([
+      'Warning: componentWillMount is deprecated',
+      'Warning: componentWillReceiveProps is deprecated',
+    ]);
   }
   checkConfirmPassword = () => {
     const { password, confirmPassword } = this.state;
@@ -37,32 +45,48 @@ export default class Register extends Component {
       this.setState({
         confirmPasswordErrorMessage: '2 passwords must be the same',
       });
+      return false;
     }
-    else {
-      this.setState({
-        confirmPasswordErrorMessage: '',
-      });
-    }
+    return true;
   }
-  checkLengthLargerThan6 = () => {
+  checkPasswordLengthLargerThan6 = () => {
     const { password } = this.state;
     if (password.length <= 6) {
       this.setState({
         passwordErrorMessage: 'Your password is at least 6 character',
       });
+      return false;
     }
-    else {
+    return true;
+  }
+  checkEmail = () => {
+    const { email } = this.state;
+    console.log(emailRegEx);
+    if (!emailRegEx.test(email.trim())) {
       this.setState({
-        passwordErrorMessage: '',
+        emailErrorMessage: 'Your email is not valid',
       });
+      return false;
     }
+    return true;
   }
   checkValidate = () => {
-    this.checkConfirmPassword();
-    this.checkLengthLargerThan6();
+    let check = true;
+    const { navigate } = this.props.navigation;
+    this.setState({
+      emailErrorMessage: '',
+      passwordErrorMessage: '',
+      confirmPasswordErrorMessage: '',
+    })
+    check &= this.checkEmail();
+    check &= this.checkPasswordLengthLargerThan6();
+    check &= this.checkConfirmPassword();
+    if (check) {
+      navigate('Home');
+    }
   }
   render() {
-    let { passwordErrorMessage, confirmPasswordErrorMessage } = this.state;
+    let { passwordErrorMessage, confirmPasswordErrorMessage, emailErrorMessage } = this.state;
     return (
       <View>
         <View>
@@ -77,6 +101,7 @@ export default class Register extends Component {
           <TextInput
             onChangeText={(email) => this.setState({ email })}
           />
+          <Text>{emailErrorMessage}</Text>
         </View>
         <View>
           <Text>Password</Text>

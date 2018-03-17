@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TextInput, View, Text, Button, Image, StyleSheet } from 'react-native';
+import { TextInput, View, Text, Button, Image, StyleSheet, YellowBox } from 'react-native';
 
 export default class LogIn extends Component {
     constructor(props) {
@@ -8,6 +8,10 @@ export default class LogIn extends Component {
             email: '',
             password: ''
         }
+        YellowBox.ignoreWarnings([
+            'Warning: componentWillMount is deprecated',
+            'Warning: componentWillReceiveProps is deprecated',
+        ]);
     }
     login = () => {
         alert('Log in successfully')
@@ -59,7 +63,7 @@ export default class LogIn extends Component {
                     />
                     <Text
                         style={styles.link}
-                        onPress = {() => navigate('Register')}
+                        onPress={() => navigate('Register')}
                     >
                         Create an account
                     </Text>
