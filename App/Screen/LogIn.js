@@ -8,10 +8,6 @@ export default class LogIn extends Component {
             email: '',
             password: ''
         }
-        YellowBox.ignoreWarnings([
-            'Warning: componentWillMount is deprecated',
-            'Warning: componentWillReceiveProps is deprecated',
-        ]);
     }
     login = () => {
         alert('Log in successfully')
