@@ -45,9 +45,10 @@ export default class Profile extends Component {
             Profile
           </Text>
         </View>
-        <View>
+        <View style={styles.container}>
           {labelAndProperty.map((info, i) => (
             <ViewOrEditFeild
+              key={i}
               editing={editing}
               label={info.label}
               property={info.property}
