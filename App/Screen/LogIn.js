@@ -14,7 +14,9 @@ export default class LogIn extends Component {
         ]);
     }
     login = () => {
-        alert('Log in successfully')
+        const { navigate } = this.props.navigation;
+        alert('Log in successfully');
+        navigate('Profile');
     }
     render() {
         const { emailError, passwordError } = this.state;
