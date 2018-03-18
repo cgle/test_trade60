@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { TextInput, View, Text, Button, Image, StyleSheet, YellowBox } from 'react-native';
+import { PROFILE_PAGE, REGISTER_PAGE } from '../constant';
 
 export default class LogIn extends Component {
     constructor(props) {
@@ -10,7 +11,9 @@ export default class LogIn extends Component {
         }
     }
     login = () => {
-        alert('Log in successfully')
+        const { navigate } = this.props.navigation;
+        alert('Log in successfully');
+        navigate(PROFILE_PAGE);
     }
     render() {
         const { emailError, passwordError } = this.state;
@@ -59,7 +62,7 @@ export default class LogIn extends Component {
                     />
                     <Text
                         style={styles.link}
-                        onPress={() => navigate('Register')}
+                        onPress={() => navigate(REGISTER_PAGE)}
                     >
                         Create an account
                     </Text>
