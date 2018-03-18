@@ -12,13 +12,14 @@ export default class Profile extends Component {
     }
   }
   handleChange = (value, property) => {
-    const data = this.state.userdata;
-    var newData = {};
-    Object.keys(data).forEach((key) => newData[key] = data[key]);
-    newData[property] = value;
-    this.setState({
-      userdata: newData,
-    })
+    return false;
+    // const data = this.state.userdata;
+    // var newData = {};
+    // Object.keys(data).forEach((key) => newData[key] = data[key]);
+    // newData[property] = value;
+    // this.setState({
+    //   userdata: newData,
+    // })
   }
   render() {
     const { userdata } = this.state;

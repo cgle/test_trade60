@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, StyleSheet, View, Text } from 'react-native';
-import { LOGIN_PAGE, REGISTER_PAGE, MESSAGES_THREAD_VIEW_PAGE } from '../constant'
+import { LOGIN_PAGE, REGISTER_PAGE, MESSAGES_THREAD_VIEW_PAGE, PROFILE_PAGE } from '../constant'
 
 export default class Homescreen extends Component {
     render() {
@@ -21,6 +21,10 @@ export default class Homescreen extends Component {
                 <Button
                     title="MessagesThread"
                     onPress={() => navigate(MESSAGES_THREAD_VIEW_PAGE)}
+                />
+                <Button
+                    title="User profile"
+                    onPress={() => navigate(PROFILE_PAGE)}
                 />
             </View>
         )

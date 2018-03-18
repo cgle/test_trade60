@@ -12,7 +12,8 @@ export default class ViewOrEditFeild extends Component {
                 <Text style={styles.label}>{label}:</Text>
                 { editing ? (
                         <TextInput 
-                            value = {value}
+                            // value = {value}
+                            placeholder = {value}
                             onChangeText = { (text) => handleChange(text, property)}
                         ></TextInput>
                     )
