@@ -15,8 +15,8 @@ import {
 import { StackNavigator } from 'react-navigation';
 import HomeScreen from './App/Screen/HomeScreen'
 import LogIn from './App/Screen/LogIn';
-import Register from './App/Screen/Register'
 import MessagesThread from './App/Screen/MessagesThread'
+import Profile from './App/Screen/Profile';
 import UserInfo from './App/Screen/UserInfo'
 
 const RootStack = StackNavigator(
@@ -33,8 +33,8 @@ const RootStack = StackNavigator(
     MessagesThreadView: {
       screen: MessagesThread,
     },
-    UserInfo: {
-      screen: UserInfo,
+    Profile: {
+      screen: Profile
     },
   },
   {
