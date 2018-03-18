@@ -9,12 +9,15 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  YellowBox,
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import HomeScreen from './App/Screen/HomeScreen'
 import LogIn from './App/Screen/LogIn';
 import Register from './App/Screen/Register'
+import MessagesThread from './App/Screen/MessagesThread'
+import UserInfo from './App/Screen/UserInfo'
 
 const RootStack = StackNavigator(
   {
@@ -22,10 +25,16 @@ const RootStack = StackNavigator(
       screen: HomeScreen,
     },
     LogIn: {
-      screen: LogIn
+      screen: LogIn,
     },
     Register: {
-      screen: Register
+      screen: Register,
+    },
+    MessagesThreadView: {
+      screen: MessagesThread,
+    },
+    UserInfo: {
+      screen: UserInfo,
     },
   },
   {
@@ -39,6 +48,13 @@ const instructions = Platform.select({
 });
 
 export default class App extends Component {
+  constructor(props) {
+    super(props)
+    YellowBox.ignoreWarnings([
+      'Warning: componentWillMount is deprecated',
+      'Warning: componentWillReceiveProps is deprecated',
+    ]);
+  }
   render() {
     return (
       <RootStack />

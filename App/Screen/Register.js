@@ -9,7 +9,7 @@ import {
   YellowBox,
 } from 'react-native';
 
-import { emailRegEx } from '../constant'
+import { emailRegEx, MESSAGES_THREAD_VIEW_PAGE } from '../constant'
 
 const styles = StyleSheet.create({
   titleText: {
@@ -34,10 +34,6 @@ export default class Register extends Component {
       passwordErrorMessage: '',
       confirmPasswordErrorMessage: '',
     };
-    YellowBox.ignoreWarnings([
-      'Warning: componentWillMount is deprecated',
-      'Warning: componentWillReceiveProps is deprecated',
-    ]);
   }
   checkConfirmPassword = () => {
     const { password, confirmPassword } = this.state;
@@ -82,7 +78,7 @@ export default class Register extends Component {
     check &= this.checkPasswordLengthLargerThan6();
     check &= this.checkConfirmPassword();
     if (check) {
-      navigate('Home');
+      navigate(MESSAGES_THREAD_VIEW_PAGE);
     }
   }
   render() {
