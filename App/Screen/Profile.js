@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Text, TextInput, Button, StyleSheet, ScrollView, View, Image, YellowBox } from 'react-native';
-import ViewOrEditFeild from "../Components/ViewOrEditFeild";
+import ViewOrEditFeild from "../components/ViewOrEditFeild";
 
 import user from '../../user.json';
 export default class Profile extends Component {
