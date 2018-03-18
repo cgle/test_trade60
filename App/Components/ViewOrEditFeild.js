@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, TextInput, Text } from "react-native";
+import { View, TextInput, Text, StyleSheet } from "react-native";
 
 export default class ViewOrEditFeild extends Component {
     constructor(props){
@@ -8,8 +8,8 @@ export default class ViewOrEditFeild extends Component {
     render() {
         const { label, property, value, editing, handleChange } = this.props;
         return (
-            <View>
-                <Text>{label}:</Text>
+            <View style={styles.container}>
+                <Text style={styles.label}>{label}:</Text>
                 { editing ? (
                         <TextInput 
                             value = {value}
@@ -25,3 +25,14 @@ export default class ViewOrEditFeild extends Component {
         );
     }
 }
+
+const styles = StyleSheet.create({
+    container: {
+        marginTop: 10,
+        marginBottom: 10,
+    },
+    label: {
+        fontSize: 15,
+        fontWeight: 'bold',
+    }
+})
