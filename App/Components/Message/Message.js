@@ -10,3 +10,5 @@ const Message = ({name, content}) => {
     </View>
   );
 }
+
+export default Message;

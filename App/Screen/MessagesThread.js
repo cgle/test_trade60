@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Thread from '../Components/Thread/Thread'
+import Thread from '../Components/Thread/Thread';
 import data from '../../threads.json'
 import { View, ScrollView, TextInput, Button } from 'react-native'
 import { PROFILE_PAGE } from '../constant'
@@ -9,7 +9,8 @@ export default class MessagesThread extends Component {
     threads: data.result,
   }
   onPressThread = (value) => {
-    alert(value);
+    const { navigate } = this.props.navigation;
+    navigate('SingleThread', {threadId: value})
   }
   onChangeText = (value) => {
     if (value == "") {

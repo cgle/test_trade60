@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { Text, View, ScrollView, TextInput, Button } from 'react-native';
-import Message from '../Components/Message/Message'
+import Message from '../Components/Message/Message';
 
 export default class SingleThread extends Component {
   constructor(props) {
     super(props);
-    const PATH = '../../thread_' + this.props.threadId + '.json';
-    import data from PATH;
-    struct = {
+    const threadId = this.props.navigation.state.params.threadId;
+    const PATH = '../../thread_' + threadId + '.json';
+    const data = require('../../thread_3.json');
+    this.state = {
       messages: data.result,
       newMessage: ''
     };
