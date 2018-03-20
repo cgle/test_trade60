@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, ScrollView, TextInput, Button } from 'react-native';
+import { Text, View, ScrollView, TextInput, Button, StyleSheet } from 'react-native';
 import Message from '../Components/Message/Message';
 
 export default class SingleThread extends Component {
@@ -25,15 +25,18 @@ export default class SingleThread extends Component {
       }
       return copyMessage;
     });
-    let newMessage = { name: 'Me', content: this.props.newMessage };                              // Name will replace by user name
+    let newMessage = { user: {name: 'Me'}, content: this.state.newMessage };                              // Name will replace by user name
     newListMessage.push(newMessage);
-    this.setState({ messages: newListMessage });
+    this.setState({ 
+      messages: newListMessage,
+      newMessage: ''
+    });
   }
   render() {
-    let { messages } = this.state;
+    let { messages, newMessage } = this.state;
     return (
       <View>
-        <ScrollView>
+        <ScrollView style={styles.messages}>
           {
             messages.map((message, index) => {
               return (
@@ -46,15 +49,24 @@ export default class SingleThread extends Component {
             })
           }
         </ScrollView>
-        <TextInput
-          placeholder="Write a message..."
-          onChangeText={this.typingMessage}
-        />
-        <Button
-          title="Send"
-          onPress={this.sendMessage}
-        />
+        <View>
+          <TextInput 
+            placeholder="Write a message..."
+            onChangeText={this.typingMessage}
+            value={newMessage}
+          />
+          <Button
+            title="Send"
+            onPress={this.sendMessage}
+          />
+        </View>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  messages: {
+    height: 400,
+  },
+})
