@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Thread from '../components/Thread/Thread'
 import data from '../../threads.json'
 import { View, ScrollView, TextInput, Button } from 'react-native'
-import { USER_INFO_PAGE } from '../constant'
+import { PROFILE_PAGE } from '../constant'
 
 export default class MessagesThread extends Component {
   state = { 
@@ -35,7 +35,7 @@ export default class MessagesThread extends Component {
       <View>
         <Button
           title="User Info"
-          onPress={() => navigator(USER_INFO_PAGE)}
+          onPress={() => navigator(PROFILE_PAGE)}
         />
         <TextInput
           placeholder="search"
