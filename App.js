@@ -13,11 +13,12 @@ import {
   YellowBox,
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
-import HomeScreen from './App/Screen/HomeScreen'
+import HomeScreen from './App/Screen/HomeScreen';
 import LogIn from './App/Screen/LogIn';
 import Register from './App/Screen/Register';
 import MessagesThread from './App/Screen/MessagesThread';
 import Profile from './App/Screen/Profile';
+import SingleThread from './App/Screen/SingleThread';
 
 const RootStack = StackNavigator(
   {
@@ -34,7 +35,10 @@ const RootStack = StackNavigator(
       screen: MessagesThread,
     },
     Profile: {
-      screen: Profile
+      screen: Profile,
+    },
+    SingleThread: {
+      screen: SingleThread,
     },
   },
   {

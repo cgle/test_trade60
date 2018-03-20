@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import Thread from '../components/Thread/Thread'
+import Thread from '../Components/Thread/Thread';
 import data from '../../threads.json'
 import { View, ScrollView, TextInput, Button } from 'react-native'
-import { USER_INFO_PAGE } from '../constant'
+import { PROFILE_PAGE } from '../constant'
 
 export default class MessagesThread extends Component {
   state = { 
     threads: data.result,
   }
   onPressThread = (value) => {
-    alert(value);
+    const { navigate } = this.props.navigation;
+    navigate('SingleThread', {threadId: value})
   }
   onChangeText = (value) => {
     if (value == "") {
@@ -35,7 +36,7 @@ export default class MessagesThread extends Component {
       <View>
         <Button
           title="User Info"
-          onPress={() => navigator(USER_INFO_PAGE)}
+          onPress={() => navigator(PROFILE_PAGE)}
         />
         <TextInput
           placeholder="search"
