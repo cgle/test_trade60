@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Thread from '../components/Thread/Thread'
+import Thread from '../Components/Thread/Thread'
 import data from '../../threads.json'
 import { View, ScrollView, TextInput, Button } from 'react-native'
 import { PROFILE_PAGE } from '../constant'
