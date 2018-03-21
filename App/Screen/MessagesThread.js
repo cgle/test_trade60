@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Thread from '../Components/Thread/Thread';
 import data from '../../threads.json'
-import { View, ScrollView, TextInput, Button } from 'react-native'
+import { View, ScrollView, TextInput, Button, StyleSheet } from 'react-native'
 import { PROFILE_PAGE } from '../constant'
 
 export default class MessagesThread extends Component {
@@ -32,11 +32,12 @@ export default class MessagesThread extends Component {
   }
   render() {
     let { threads } = this.state;
+    const { navigate } = this.props.navigation;
     return (
-      <View>
+      <View style={styles.container}>
         <Button
           title="User Info"
-          onPress={() => navigator(PROFILE_PAGE)}
+          onPress={() => navigate(PROFILE_PAGE)}
         />
         <TextInput
           placeholder="search"
@@ -59,3 +60,9 @@ export default class MessagesThread extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  }
+})

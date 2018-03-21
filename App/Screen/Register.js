@@ -7,11 +7,15 @@ import {
   StyleSheet,
   Image,
   YellowBox,
+  ScrollView,
 } from 'react-native';
 
 import { emailRegEx, MESSAGES_THREAD_VIEW_PAGE } from '../constant'
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
   titleText: {
     fontSize: 20,
     fontWeight: 'bold',
@@ -84,7 +88,7 @@ export default class Register extends Component {
   render() {
     let { passwordErrorMessage, confirmPasswordErrorMessage, emailErrorMessage } = this.state;
     return (
-      <View>
+      <ScrollView>
         <View>
           <Image
             source={require('../../images/logo.jpg')}
@@ -118,7 +122,7 @@ export default class Register extends Component {
         <View>
           <Button title="SignUp" onPress={this.checkValidate} />
         </View>
-      </View>
+      </ScrollView>
     );
   }
 }

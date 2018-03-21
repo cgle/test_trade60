@@ -6,4 +6,4 @@ const PROFILE_PAGE = 'Profile';
 
 const emailRegEx = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
-export { HOME_PAGE, LOGIN_PAGE, REGISTER_PAGE, MESSAGES_THREAD_VIEW_PAGE, PROFILE_PAGE };
+export { emailRegEx, HOME_PAGE, LOGIN_PAGE, REGISTER_PAGE, MESSAGES_THREAD_VIEW_PAGE, PROFILE_PAGE };
