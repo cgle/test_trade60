@@ -36,7 +36,11 @@ export default class SingleThread extends Component {
     let { messages, newMessage } = this.state;
     return (
       <View>
-        <ScrollView style={styles.messages}>
+        <ScrollView 
+          style={styles.messages}
+          ref={ref => this.scrollView = ref}
+          onContentSizeChange={() => this.scrollView.scrollToEnd({ animated: true })} 
+        >
           {
             messages.map((message, index) => {
               return (

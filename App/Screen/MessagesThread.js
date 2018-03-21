@@ -32,11 +32,12 @@ export default class MessagesThread extends Component {
   }
   render() {
     let { threads } = this.state;
+    const { navigate } = this.props.navigation;
     return (
       <View>
         <Button
           title="User Info"
-          onPress={() => navigator(PROFILE_PAGE)}
+          onPress={() => navigate(PROFILE_PAGE)}
         />
         <TextInput
           placeholder="search"
