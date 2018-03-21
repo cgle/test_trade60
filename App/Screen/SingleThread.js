@@ -35,7 +35,7 @@ export default class SingleThread extends Component {
   render() {
     let { messages, newMessage } = this.state;
     return (
-      <View>
+      <View style={styles.container}>
         <ScrollView 
           style={styles.messages}
           ref={ref => this.scrollView = ref}
@@ -53,7 +53,7 @@ export default class SingleThread extends Component {
             })
           }
         </ScrollView>
-        <View>
+        <View style={styles.newMessage}>
           <TextInput 
             placeholder="Write a message..."
             onChangeText={this.typingMessage}
@@ -70,7 +70,13 @@ export default class SingleThread extends Component {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
   messages: {
-    height: 400,
+    flex: 1,
+  },
+  newMessage: {
+    height: 100,
   },
 })
